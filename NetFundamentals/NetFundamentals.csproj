@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{53C5F2E9-F850-4BAE-89A0-5313A103BD1B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>NetFundamentals</RootNamespace>
+    <AssemblyName>NetFundamentals</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DesignPatterns\AbstractFactory\ConcreteFactory1.cs" />
+    <Compile Include="DesignPatterns\AbstractFactory\ConcreteFactory2.cs" />
+    <Compile Include="DesignPatterns\AbstractFactory\ConcreteProductA1.cs" />
+    <Compile Include="DesignPatterns\AbstractFactory\ConcreteProductA2.cs" />
+    <Compile Include="DesignPatterns\AbstractFactory\ConcreteProductB1.cs" />
+    <Compile Include="DesignPatterns\AbstractFactory\ConcreteProductB2.cs" />
+    <Compile Include="DesignPatterns\AbstractFactory\IAbstractFactory.cs" />
+    <Compile Include="DesignPatterns\AbstractFactory\IProductA.cs" />
+    <Compile Include="DesignPatterns\AbstractFactory\IProductB.cs" />
+    <Compile Include="DesignPatterns\Adapter\Adaptee.cs" />
+    <Compile Include="DesignPatterns\Adapter\Adapter.cs" />
+    <Compile Include="DesignPatterns\Adapter\ExampleUsage.cs" />
+    <Compile Include="DesignPatterns\Adapter\ITarget.cs" />
+    <Compile Include="DesignPatterns\Bridge\Abstraction.cs" />
+    <Compile Include="DesignPatterns\Bridge\ExampleUsage.cs" />
+    <Compile Include="DesignPatterns\Bridge\ConcreteImplementorA.cs" />
+    <Compile Include="DesignPatterns\Bridge\ConcreteImplementorB.cs" />
+    <Compile Include="DesignPatterns\Bridge\IImplementor.cs" />
+    <Compile Include="DesignPatterns\Bridge\RefinedAbstraction.cs" />
+    <Compile Include="DesignPatterns\Builder\Builder.cs" />
+    <Compile Include="DesignPatterns\Builder\ConcreteBuilder1.cs" />
+    <Compile Include="DesignPatterns\Builder\ConcreteBuilder2.cs" />
+    <Compile Include="DesignPatterns\Builder\Director.cs" />
+    <Compile Include="DesignPatterns\Builder\ExampleUsage.cs" />
+    <Compile Include="DesignPatterns\Builder\Product.cs" />
+    <Compile Include="DesignPatterns\ChainOfResponsibility\ExampleUsage.cs" />
+    <Compile Include="DesignPatterns\ChainOfResponsibility\ConcreteHandler1.cs" />
+    <Compile Include="DesignPatterns\ChainOfResponsibility\ConcreteHandler2.cs" />
+    <Compile Include="DesignPatterns\ChainOfResponsibility\ConcreteHandler3.cs" />
+    <Compile Include="DesignPatterns\ChainOfResponsibility\Handler.cs" />
+    <Compile Include="DesignPatterns\Command\ExampleUsage.cs" />
+    <Compile Include="DesignPatterns\Command\ConcreteCommand.cs" />
+    <Compile Include="DesignPatterns\Command\ICommand.cs" />
+    <Compile Include="DesignPatterns\Command\Invoker.cs" />
+    <Compile Include="DesignPatterns\Command\Receiver.cs" />
+    <Compile Include="DesignPatterns\Composite\ExampleUsage.cs" />
+    <Compile Include="DesignPatterns\Composite\Component.cs" />
+    <Compile Include="DesignPatterns\Composite\Composite.cs" />
+    <Compile Include="DesignPatterns\Composite\Leaf.cs" />
+    <Compile Include="DesignPatterns\Decorator\ExampleUsage.cs" />
+    <Compile Include="DesignPatterns\Decorator\Component.cs" />
+    <Compile Include="DesignPatterns\Decorator\ConcreteComponent.cs" />
+    <Compile Include="DesignPatterns\Decorator\ConcreteDecoratorA.cs" />
+    <Compile Include="DesignPatterns\Decorator\ConcreteDecoratorB.cs" />
+    <Compile Include="DesignPatterns\Decorator\Decorator.cs" />
+    <Compile Include="DesignPatterns\Facade\ExampleUsage.cs" />
+    <Compile Include="DesignPatterns\Facade\Facade.cs" />
+    <Compile Include="DesignPatterns\Facade\SubsystemA.cs" />
+    <Compile Include="DesignPatterns\Facade\SubsystemB.cs" />
+    <Compile Include="DesignPatterns\Facade\SubsystemC.cs" />
+    <Compile Include="DesignPatterns\FactoryMethod\Creator.cs" />
+    <Compile Include="DesignPatterns\FactoryMethod\CreatorA.cs" />
+    <Compile Include="DesignPatterns\FactoryMethod\CreatorB.cs" />
+    <Compile Include="DesignPatterns\FactoryMethod\IProduct.cs" />
+    <Compile Include="DesignPatterns\FactoryMethod\ProductA.cs" />
+    <Compile Include="DesignPatterns\FactoryMethod\ProductB.cs" />
+    <Compile Include="DesignPatterns\Flyweight\ConcreteFlyweight.cs" />
+    <Compile Include="DesignPatterns\Flyweight\ExampleUsage.cs" />
+    <Compile Include="DesignPatterns\Flyweight\FlyweightFactory.cs" />
+    <Compile Include="DesignPatterns\Flyweight\IFlyweight.cs" />
+    <Compile Include="DesignPatterns\Flyweight\UnsharedConcreteFlyweight.cs" />
+    <Compile Include="DesignPatterns\Interpreter\AbstractExpression.cs" />
+    <Compile Include="DesignPatterns\Interpreter\Context.cs" />
+    <Compile Include="DesignPatterns\Interpreter\ExampleUsage.cs" />
+    <Compile Include="DesignPatterns\Interpreter\NonterminalExpression.cs" />
+    <Compile Include="DesignPatterns\Interpreter\TerminalExpression.cs" />
+    <Compile Include="DesignPatterns\Iterator\ConcreteAggregate.cs" />
+    <Compile Include="DesignPatterns\Iterator\ConcreteIterator.cs" />
+    <Compile Include="DesignPatterns\Iterator\ExampleUsage.cs" />
+    <Compile Include="DesignPatterns\Iterator\IAggregate.cs" />
+    <Compile Include="DesignPatterns\Iterator\Iterator.cs" />
+    <Compile Include="DesignPatterns\Mediator\ConcreteColleague1.cs" />
+    <Compile Include="DesignPatterns\Mediator\ConcreteColleague2.cs" />
+    <Compile Include="DesignPatterns\Mediator\ConcreteMediator.cs" />
+    <Compile Include="DesignPatterns\Mediator\ExampleUsage.cs" />
+    <Compile Include="DesignPatterns\Mediator\IColleague.cs" />
+    <Compile Include="DesignPatterns\Mediator\IMediator.cs" />
+    <Compile Include="DesignPatterns\Memento\Caretaker.cs" />
+    <Compile Include="DesignPatterns\Memento\ExampleUsage.cs" />
+    <Compile Include="DesignPatterns\Memento\Memento.cs" />
+    <Compile Include="DesignPatterns\Memento\Originator.cs" />
+    <Compile Include="DesignPatterns\Observer\ExampleUsage.cs" />
+    <Compile Include="DesignPatterns\Observer\IObserver.cs" />
+    <Compile Include="DesignPatterns\Observer\ISubject.cs" />
+    <Compile Include="DesignPatterns\Observer\PhoneDisplay.cs" />
+    <Compile Include="DesignPatterns\Observer\TVDisplay.cs" />
+    <Compile Include="DesignPatterns\Observer\WeatherStation.cs" />
+    <Compile Include="DesignPatterns\Prototype\ConcretePrototype.cs" />
+    <Compile Include="DesignPatterns\Prototype\ExampleUsage.cs" />
+    <Compile Include="DesignPatterns\Prototype\IPrototype.cs" />
+    <Compile Include="DesignPatterns\Proxy\ExampleUsage.cs" />
+    <Compile Include="DesignPatterns\Proxy\ISubject.cs" />
+    <Compile Include="DesignPatterns\Proxy\Proxy.cs" />
+    <Compile Include="DesignPatterns\Proxy\RealSubject.cs" />
+    <Compile Include="DesignPatterns\State\ExampleUsage.cs" />
+    <Compile Include="DesignPatterns\State\PausedState.cs" />
+    <Compile Include="DesignPatterns\State\Player.cs" />
+    <Compile Include="DesignPatterns\State\PlayingState.cs" />
+    <Compile Include="DesignPatterns\State\IState.cs" />
+    <Compile Include="DesignPatterns\State\StoppedState.cs" />
+    <Compile Include="DesignPatterns\Strategy\ExampleUsage.cs" />
+    <Compile Include="DesignPatterns\Strategy\ExpeditedShippingStrategy.cs" />
+    <Compile Include="DesignPatterns\Strategy\IShippingStrategy.cs" />
+    <Compile Include="DesignPatterns\Strategy\ShippingContext.cs" />
+    <Compile Include="DesignPatterns\Strategy\StandardShippingStrategy.cs" />
+    <Compile Include="DesignPatterns\TemplateMethod\Chess.cs" />
+    <Compile Include="DesignPatterns\TemplateMethod\ExampleUsage.cs" />
+    <Compile Include="DesignPatterns\TemplateMethod\Game.cs" />
+    <Compile Include="DesignPatterns\TemplateMethod\TicTacToe.cs" />
+    <Compile Include="DesignPatterns\Visitor\Book.cs" />
+    <Compile Include="DesignPatterns\Visitor\ExampleUsage.cs" />
+    <Compile Include="DesignPatterns\Visitor\Fruit.cs" />
+    <Compile Include="DesignPatterns\Visitor\IElement.cs" />
+    <Compile Include="DesignPatterns\Visitor\IVisitor.cs" />
+    <Compile Include="DesignPatterns\Visitor\ShoppingCartVisitor.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
